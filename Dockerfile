@@ -1,7 +1,5 @@
-FROM node:9-alpine
-
-RUN npm install -g turnilo@1.19.0
-
+FROM node:14.15.4
+MAINTAINER DMP <dmp@fresh8gaming.com>
 EXPOSE 9090
-
-CMD turnilo --druid $DRUID_HOST
+RUN npm install -g turnilo@1.33.0
+CMD ["/bin/sh"]
