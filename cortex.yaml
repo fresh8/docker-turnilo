@@ -1,0 +1,25 @@
+openapi: 3.0.1
+info:
+  title: docker-turnilo
+  description: docker-turnilo
+  x-cortex-git:
+    gitlab:
+      repository: ads/adssd/docker-turnilo
+  x-cortex-tag: adssd_docker-turnilo
+  x-cortex-type: service
+  x-cortex-groups:
+  - configuration
+  x-cortex-owners:
+  - type: group
+    name: ads-sd
+    provider: CORTEX
+  x-cortex-domain-parents:
+  - tag: adssd
+  x-cortex-static-analysis:
+    sonarqube:
+      project: adssd_docker-turnilo
+  x-cortex-custom-metadata:
+    github: https://github.com/fresh8/docker-turnilo
+    codebase-type:
+      type: configuration
+      description: https://sportradar.slack.com/archives/C02PFBUALP4/p1689156840940119
